@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%='Syntuition.org │ Home where intuition is synthesized!'%></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Alef|Arima+Madurai|Charm|Cookie|Cormor
+  ant+Upright|Farsan|Italianno|Maitree|Marmelad|Montez|Niconne|Petit+Formal+Script|
+  Philosopher|Playball|Rochester|Rosarivo|Rouge+Script
+  |Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+<%= render :partial =>'abt' %>
+
+<div class="w3-row ">
+  <div class="w3-container" >
+    <%= render :partial=>'abt2' %>
+    <div class="w3-col m9">
+      <div class="w3-container">
+        <h2 class="w3-relativity w3-margin w3-text-brown w3-arima"><%='Contact Us' %></h2>
+        <div class="w3-margin">
+        <div class="w3-col m6">
+          <div class="w3-border-grey w3-border w3-round-large w3-margin">
+          <p class=" w3-padding"><%='Syntuition Headquarters ' %><br><%='P.O Box 23929' %>
+            <br/><%='Cairo Road' %><br><%='Lusaka, Zambia' %></p></div>
+        </div>
+          <div class=" w3-col m6 ">
+            <div class="w3-border w3-border-grey w3-round-large w3-margin">
+          <article class="w3-padding "><%='foundation(at)syntuition(dot)org ' %>
+            <br><%='CEO:Innocent Kayamba' %><br><%='Today' %></article></div>
+          </div>
+        </div>
+      <div class="w3-container">
+        <%= form_tag do%>
+        <div class="w3-border-grey w3-border w3-round-large w3-mobile ">
+          <p class="w3-margin w3-ready w3-padding"><%= label :name, :full_names%> <%= text_field :name, :full_names,:size=>34, :class=>'w3-round w3-margin-left' %></p>
+          <p class="w3-margin w3-ready w3-padding"><%=label :name, :email_address %> <%=text_field :name, :email_adress, :size=>34, :class=>"w3-round w3-margin-left" %></p>
+          <p class="w3-margin w3-ready w3-padding"><%=label :name, :main_subject %><%=text_field :name, :main_subject,:size=>40,:class=>'w3-round w3-margin-left w3-mobile' %></p>
+          <p class="w3-margin w3-ready w3-padding"><%=label :name, :main_body , :class=>'w3-margin-left w3-mobile' %><br><%=text_area :name, :main_body, :rows=>5, :cols=>60, :class=>'w3-round w3-margin-left w3-mobile' %></p>
+          <p class="w3-margin w3-ready w3-padding"><%=submit_tag  %></p>
+
+        </div>
+        <% end %>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+

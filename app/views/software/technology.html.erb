@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  <title><%='Syntuition.org │ Home where intuition is synthesized!'%></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Alef|Arima+Madurai|Charm|Cookie|Cormorant+Upright|Farsan|Italianno|Maitree|Marmelad|Montez|Niconne|Petit+Formal+Script|Philosopher|Playball|Rochester|Rosarivo|Rouge+Script|Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class=w3-row>
+  <h2 class="w3-center w3-arima"><%='THEY MAKE THE POSSIBILITIES ENDLESS' %></h2>
+  <div class="w3-container">
+    <div class="w3-half" >
+      <h2 class="w3-arima"><%='Computer Programming Languages' %></h2>
+    </div>
+    <div class="w3-half">
+      <p class="w3-relativity "  style="font-size: 14px;"><%='Syntuition\'s website is a combination of many computer programming languages,
+       the first common language is'%> <%=link_to 'ruby', 'https://www.ruby-lang.org/en/',:class=>'w3-text-red' %><%=' which encompasses 70 percent of the website while other languages have been categorised in remaining
+       the 30 percent. The languages presented here are the ones available when applying for '%> <%=link_to 'website development', {:controller => 'confidential', :action => 'websitedev'},:class=>'w3-text-teal' %><%= ' in project\'s tab therefore, it
+is up to the newbie to know his/her accustomed programming language and where to apply it. For CSS framework the website is currently running on
+W3.CSS from '%><%=link_to 'w3schools', 'http://www.w3schools.com',:class=>'w3-text-green' %> <%='however, it will soon start running on '%><%=link_to 'foundation 6', 'https://foundation.zurb.com',:class=>'w3-text-brown' %><%=' or'%>
+        <%=link_to 'bootstrap', 'https://getbootstrap.com',:class=>'w3-text-purple' %>
+        <%='depending on the communities choice.' %> </p>
+    </div>
+  </div>
+</div>
+<div class="w3-row">
+  <div class="w3-container">
+    <h2 class="w3-center w3-arima"><%='Software we normally use' %></h2>
+    <div class="w3-col m2">
+      <p class="w3-center w3-blue w3-card " style="margin-right:5px;">
+        <span class="w3-text-orange w3-xlarge w3-hover-text-white w3-arima">
+          <%=link_to 'Blender','http://www.blender.org',:class =>'w3-text-orange w3-xlarge w3-hover-text-cyan', :style=>'text-decoration:none;' %></span><br>
+        <span class="w3-relativity" style="font-size: 14px;"><%=image_tag 'blender3d.png',:class=>'w3-image',:alt => 'Blender 3D software' %>
+          <%='Blender is used for projects like 3D animations, SkyLab and others.'%></span></p>
+    </div>
+    <div class="w3-col m2">
+      <p class="w3-center w3-card w3-brown" style="margin-right:5px;">
+        <span class="w3-relativity" >
+          <span class="w3-text-blue w3-xlarge w3-hover-text-red w3-arima">
+          <%= link_to 'Synfig','https://www.synfig.org',:class=>'w3-text-blue w3-xlarge w3-hover-text-red',:style=>'text-decoration: none;' %></span> <%='and'%>
+          <span class="w3-text-orange w3-xlarge w3-hover-text-teal w3-arima">
+            <%=link_to 'Harmony', 'https://www.toonboom.com',:class=>'w3-text-orange w3-xlarge w3-hover-text-white',:style=>'text-decoration:none;' %></span>
+        </span><br/><span class="w3-relativity" style="font-size: 14px;">
+        <%=image_tag 'harmony.png',:class=>'w3-image',:alt => 'Toon Boom Harmony and Synfig' %>
+        <%='Synfig and Harmony are used for making 2D animations.' %></span></p>
+    </div>
+    <div class="w3-col m2">
+      <p class="w3-center w3-card w3-green" style="margin-right:5px;">
+        <span class="w3-text-black w3-arima w3-xlarge w3-hover-text-yellow">
+          <%=link_to 'Three.js', 'https://threejs.org/',:class=>"w3-text-black w3-xlarge w3-hover-text-cyan",:style=>'text-decoration: none;' %></span><br/>
+        <span class="w3-relativity" style="font-size: 14px;"><%=image_tag 'threejs.png',:class=>'w3-image',:alt => 'Threejs' %><%='Threejs is mainly used for putting New 3D art on our web engine.'%></span></p>
+    </div>
+    <div class="w3-col m2">
+      <p class="w3-center w3-card w3-grey" style="margin-right:5px;">
+        <span class="w3-text-white w3-xlarge w3-hover-text-amber w3-arima"><%=link_to 'Medibang/Clip', 'https://www.clipstudio.net/en',:class=>'w3-text-blue w3-xlarge w3-hover-text-amber',:style=>'text-decoration: none;' %></span><br/>
+        <span class="w3-relativity" style="font-size: 14px;"><%=image_tag 'medibang.png',:class=>'w3-image',:alt => 'Medibang and clip paint studio' %><%='Both clip studio and medibang are used for making comics.' %></span></p>
+
+    </div>
+    <div class="w3-col m2">
+      <p class="w3-center  w3-card w3-black" style="margin-right:5px;"><span class="w3-text-lime w3-xlarge w3-hover-text-teal w3-arima"><%=link_to 'Crazy Bump', 'http://www.crazybump.com',:class=>'w3-text-purple w3-xlarge w3-hover-text-teal',:style=>'text-decoration: none;' %></span><br>
+        <span class="w3-relativity" style="font-size: 14px;"><%=image_tag 'crazy4bump.png',:class=>'w3-image',:alt => 'Crazy4bump' %><%='We use this tool to create different forms of textures.'%> </span></p>
+    </div>
+    <div class="w3-col m2">
+      <p class="w3-center  w3-card w3-teal" style="margin-right:5px;"><span class="w3-text-white w3-xlarge w3-hover-text-aqua w3-arima" >
+        <%=link_to 'Godot', 'https://godotengine.org/',:class=>'w3-text-blue w3-xlarge w3-hover-text-aqua',:style=>'text-decoration: none;' %></span><br>
+        <span class="w3-relativity" style="font-size: 14px;">
+        <%=image_tag 'godot.png',:class=>'w3-image',:alt => 'Godot' %><%='Godot is a used for developing SkyLab.'%></span></p>
+    </div>
+  </div>
+</div>
+<div class=w3-row>
+  <div class="w3-container">
+    <div class="w3-half w3-right" >
+      <h2 class="w3-center w3-arima " ><%='Show reel' %></h2>
+
+
+    </div>
+    <div class="w3-half w3-left">
+      <p class="w3-relativity " style="font-size: 14px;"><%='Show reel is a collection of advancements
+        made in each month in a particular project of a year at Syntuition organization. A
+        show reel is composed of animations, newly added Skylab experiments,
+        modifications made in Spooky, textures add to the database,
+        comics developed and many more. Reels also play an important
+        role in the initial openings of the showcasing day at Syntuition.
+        It is agreed that the length of the reel is ought not to exceed the 5 minutes with
+        this, minor advancements are cherry-picked by debating at what should be put in a reel.
+        The reels are not only made accessible to the website but also to everyone including popular
+        networks like '%><%= link_to 'facebook','http://www.facebook.com',:class=>'w3-text-blue' %>
+        <%=link_to 'youtube','http://www.youtube.com',:class=>'w3-text-red'  %>
+        <%= 'and' %> <%=link_to 'instagram','http://www.instagram.com',:class=> 'w3-text-brown'  %><%=' as a result,
+        we recommend you to join us today.'%> </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

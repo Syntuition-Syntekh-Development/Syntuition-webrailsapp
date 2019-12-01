@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%='Syntuition.org │ Home where intuition is synthesized!'%></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Alef|Arima+Madurai|Charm|Cookie|Cormor
+  ant+Upright|Farsan|Italianno|Maitree|Marmelad|Montez|Niconne|Petit+Formal+Script|
+  Philosopher|Playball|Rochester|Rosarivo|Rouge+Script
+  |Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="w3-row ">
+  <div class="w3-container w3-center">
+    <h2 class="w3-xlarge w3-relativity w3-margin-left w3-arima"><%='Syn'%><span style="border-bottom: solid; border-bottom-color: darkred;"><%='tra Memb'%></span><%='ers'%></h2><br><article><span class="w3-medium w3-relativity" style="font-size:14px;"><%='Members found within Syntuition organization. For one to become a Syntuition member'%><br> <%='he/she has to be elected by preexisting Syntuition (Syntra) members. All members in this catergory '%><br><%='were once rotation, summer, platform and undergraduate like you except founders of the organization.'%></span></article>
+    <div class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="kako()" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="koks" class="w3-medium w3-relativity"><%='Br' %><span style="border-bottom:solid; border-bottom-color: peru;"><%='ighton Kak' %></span><%='oma' %><br></p>
+      </div>
+      <div class="w3-card w3-margin">
+        <button onclick="bad();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="choks" class="w3-medium w3-relativity"><%='Ch' %><span style="border-bottom: solid; border-bottom-color: darkgreen;"><%='omba Kapa' %></span><%='ya' %><br></p>
+      </div>
+      <script>
+          let e = 0;
+          let ko = 'Organization Interest:[???] Profession: Python Specialist ';
+          let kok = 50;
+
+          function kako() {
+              if (e < ko.length) {
+                  document.getElementById("koks").innerHTML += ko.charAt(e);
+                  e++;
+                  setTimeout(kako, kok);
+              }
+          }
+      </script>
+      <script>
+          let c = 0;
+          let bab = 'Organization Interest:[???] Profession:CSS3 and HTML5 Specialist';
+          let damn = 50;
+
+          function bad() {
+              if (c < bab.length) {
+                  document.getElementById("choks").innerHTML += bab.charAt(c);
+                  c++;
+                  setTimeout(bad, damn);
+              }
+          }
+      </script>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="typeWriter();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="aook" class="w3-medium w3-relativity"><%='Inn' %><span style= "border-bottom:solid; border-bottom-color: blue;"><%='ocent Kayam'%></span><%='ba' %><br> </p>
+      </div>
+      <script>
+          let i = 0;
+          let txt = 'Organization Interest: [SkyLab, Computer Animations & Spooky] Profession: Scenarist, 3D artist, HTML5, Ruby, Javascript & CSS3 Specialist';
+          let speed = 50;
+
+          function typeWriter() {
+              if (i < txt.length) {
+                  document.getElementById("aook").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+              }
+          }
+      </script>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="good();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="kjp" class="w3-medium w3-relativity"><%='Ja' %><span style="border-bottom: solid; border-bottom-color: crimson;"><%='cob Kanyem' %></span><%='bo' %><br></p>
+      </div>
+
+      <script>
+          let k = 0;
+          let doc = 'Organization Interest: [Entrepreneur] Profession: Python Specialist';
+          let code = 50;
+
+          function good() {
+              if (k < doc.length) {
+                  document.getElementById("kjp").innerHTML += doc.charAt(k);
+                  k++;
+                  setTimeout(good, code);
+              }
+          }
+      </script>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="sim();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="mon" class="w3-medium w3-relativity"><%='S' %><span style="border-bottom:solid; border-bottom-color: red;"><%='imon Kaya' %></span><%='mba' %><br></p>
+      </div>
+      <div class="w3-card w3-margin ">
+        <button onclick="tech();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="hill" class="w3-medium w3-relativity"><span style="border-bottom: solid; border-bottom-color: peru;"><%='Allan Mo' %></span><%='fya' %><br></p>
+      </div>
+    </div>
+    <script>
+        let f = 0;
+        let cmo = 'Organization Interest: [???] Profession: Scenarist, Entrepreneur ';
+        let sk = 50;
+
+        function sim() {
+            if (f < cmo.length) {
+                document.getElementById("mon").innerHTML += cmo.charAt(f);
+                f++;
+                setTimeout(sim, sk);
+            }
+        }
+    </script>
+    <script>
+        let t = 0;
+        let sid = 'Organization Interest:[???] Profession: Computer Phone Software Repairing, Entrepreneur ';
+        let speed = 50;
+
+        function tech() {
+            if (t < sid.length) {
+                document.getElementById("hill").innerHTML += sid.charAt(t);
+                t++;
+                setTimeout(tech, speed);
+            }
+        }
+    </script>
+  </div>
+
+  <hr>
+  <!--Rotation Students-->
+  <div class="w3-container w3-center">
+    <h2 class="w3-xlarge w3-relativity w3-margin-left w3-arima"><%='R'%><span style="border-bottom: solid; border-bottom-color: deeppink;"><%='otation Student'%></span><%='s'%></h2><br/><article><span class="w3-medium w3-relativity" style="font-size:14px;"><%='Students with prior knowledge join and select fields of interest for advancement and development for a specific interval of time. In this section students are required to complete 3 fields of rotations. In here, students are at liberty to choose fields and are supersived by team leaders. Students are expected to work 16 hours weekly and are encouraged to discuss their expectations with their team leaders before starting each rotation and at the end of each rotation are expected to give a presentation of their work. Please note that there are three rotations in this field with each having an ultimate end.'%></span></article>
+    <div  class="w3-quarter">
+
+
+    </div>
+
+
+
+    <div  class="w3-quarter">
+
+
+    </div>
+
+    <div  class="w3-quarter ">
+
+
+    </div>
+
+
+
+    <div class="w3-quarter">
+
+    </div>
+
+
+  </div>
+
+
+  <hr>
+  <!-- Members Section -->
+  <!--Summer Students-->
+  <div class="w3-container w3-center">
+    <h2 class=" w3-margin-left w3-xlarge w3-relativity w3-arima"><%='S'%><span style="border-bottom:solid; border-bottom-color: sandybrown;"><%='ummer Student'%></span><%='s' %></h2><br><article><span class="w3-medium w3-relativity" style="font-size:14px;"><%='Syntuition summer programme offers students pursing natural science, programming, computer animations or passionate with art to join'%> <br><%=' in the day to day work of Syntuition team in various fields. The minimum week of stay is 8 and maximum is 13. Students in this programme undergo various trainings through inter-displinary departments in order to enrich personal experience.'%> </span></article>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="kas();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="kaso" class="w3-medium w3-relativity"><%='Em' %><span style="border-bottom: solid; border-bottom-color: tomato;"><%='manuel Kaso' %></span><%='nde' %><br></p>
+      </div>
+
+
+      <script>
+          let g = 0;
+          let uel = 'Organization Interest: [Computer Animations] Profession: 2D artist';
+          let dam = 50;
+
+          function kas() {
+              if (g < uel.length) {
+                  document.getElementById("kaso").innerHTML += uel.charAt(g);
+                  g++;
+                  setTimeout(kas, dam);
+              }
+          }
+      </script>
+      <div class="w3-card w3-margin">
+        <button onclick="sed();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="mbu" class="w3-medium w3-relativity"><%='Se' %><span style="border-bottom: solid; border-bottom-color: palegreen;"><%='dson Kanye' %></span><%='mbu' %><br></p>
+      </div>
+    </div>
+    <script>
+        let j = 0;
+        let hip = 'Organization Interest:[???] Profession: 2D artist and Storyteller';
+        let lop = 50;
+
+        function sed() {
+            if (j < hip.length) {
+                document.getElementById("mbu").innerHTML += hip.charAt(j);
+                j++;
+                setTimeout(sed, lop);
+            }
+        }
+    </script>
+
+
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="wil();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="son" class="w3-medium w3-relativity"><%='W' %><span style="border-bottom: solid; border-bottom-color: rebeccapurple;"><%='ilson Kaya'%></span><%='mba' %><br></p>
+      </div>
+
+    </div>
+    <script>
+        let a = 0;
+        let ils = 'Organization Interest: (Computer Animations) Profession: 3D artist';
+        let on = 50;
+
+        function wil() {
+            if (a < ils.length) {
+                document.getElementById("son").innerHTML += ils.charAt(a);
+                a++;
+                setTimeout(wil, on);
+            }
+        }
+    </script>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="sia();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="pop" class="w3-medium w3-relativity"><%='W' %><span style="border-bottom: solid; border-bottom-color: darkgreen;"><%='illiam Sianen' %></span><%='ge' %><br></p>
+      </div>
+
+    </div>
+    <script>
+        let h = 0;
+        let nge = 'Organization Interest:[???] Profession: 2D artist';
+        let rep = 50;
+
+        function sia() {
+            if (h < nge.length) {
+                document.getElementById("pop").innerHTML += nge.charAt(h);
+                h++;
+                setTimeout(sia, rep);
+            }
+        }
+    </script>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="ror();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="cho" class="w3-medium w3-relativity"><%='Pa' %><span style="border-bottom: solid; border-bottom-color: darkgreen;"><%='trick Mule' %></span><%='nga' %><br></p>
+      </div>
+
+      <script>
+          let x = 0;
+          let rox = 'Organization Interest:[???] Profession: 2D Storyboard Artist';
+          let xxy = 50;
+
+          function ror() {
+              if (x < rox.length) {
+                  document.getElementById("cho").innerHTML += rox.charAt(x);
+                  x++;
+                  setTimeout(ror, xxy);
+              }
+          }
+      </script>
+      <div class="w3-card w3-margin">
+        <button onclick="ses();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="mut" class="w3-medium w3-relativity"><%='Mo' %><span style="border-bottom: solid; border-bottom-color: indigo;"><%='ses Muta'%></span><%='le'%><br></p>
+      </div>
+
+      <script>
+          let b = 0;
+          let abb = 'Organization Interest:[???] Profession: 2D artist';
+          let amn = 50;
+
+          function ses() {
+              if (b < abb.length) {
+                  document.getElementById("mut").innerHTML += abb.charAt(b);
+                  b++;
+                  setTimeout(ses, amn);
+              }
+          }
+      </script>
+
+    </div>
+
+  </div>
+
+  <hr>
+  <!--Syntuition Platform-->
+  <div class="w3-container w3-center">
+    <h2 class=" w3-margin-left w3-xlarge w3-relativity w3-arima"><%='Syn'%><span style="border-bottom: solid; border-bottom-color: darkgreen"><%='tuition Platf'%></span><%='orm'%></h2><br><article><span class="w3-medium w3-relativity" style="font-size:14px;"><%='These are individuals who raise awareness about a particular product or service during a showcase day. '%> <br><%='Individuals in this field need to have a prior history about the product or service of Syntuition in order to inform the public.'%> </span></article>
+    <div class="w3-mobile">
+      <div class="w3-card w3-margin " >
+        <button onclick="xxr();" class="w3-button w3-transparent"><%= image_tag 'avatar6.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="fya" class=" w3-medium w3-relativity"><%='Mo' %><span style="border-bottom: solid; border-bottom-color: palevioletred;"><%='fya Muta' %></span><%='le' %><br></p>
+      </div>
+    </div>
+    <script>
+        let q = 0;
+        let opi = 'Organization Interest:[???] Profession: Finacial Treasurer';
+        let la = 50;
+
+        function xxr() {
+            if (q < opi.length) {
+                document.getElementById("fya").innerHTML += opi.charAt(q);
+                q++;
+                setTimeout(xxr, la);
+            }
+        }
+    </script>
+  </div>
+  <hr>
+  <!-- Synter (Visiting students) -->
+
+  <div class="w3-container w3-center">
+    <h2 class=" w3-margin-left w3-xlarge w3-relativity w3-arima"><%='Sy'%><span style="border-bottom: solid; border-bottom-color: purple"><%='nter'%><%='(Visiting Studen'%></span><%='ts)'%></h2><br><article><span class="w3-medium w3-relativity" style="font-size:14px;"><%='These are grateful individuals who visit us occasionally. They can be professionals, freelancers or part-time workers who feel '%> <br> <%='that Syntuition should not be where it is and should make adjustments in its operations.'%></span></article>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="len();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png',:alt =>'Collins Mulenga', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="col" class="w3-medium w3-relativity"><%='Co' %><span style="border-bottom: solid; border-bottom-color: darkgreen;"><%='llins Mulen' %></span><%='ga' %><br></p>
+      </div>
+    </div>
+    <script>
+        let o = 0;
+        let qwe = 'Organization Interest:[???] Profession: 2D artist, 3D artist, html and Python specialist';
+        let dn = 50;
+
+        function len() {
+            if (o < qwe.length) {
+                document.getElementById("col").innerHTML += qwe.charAt(o);
+                o++;
+                setTimeout(len, dn);
+            }
+        }
+    </script>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="op();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="pio" class="w3-medium w3-relativity"><%='Luse'%><span style="border-bottom: solid; border-bottom-color: goldenrod;"><%='kelo Kalilo' %></span><%='mbe' %><br></p>
+      </div>
+    </div>
+    <script>
+        let l = 0;
+        let mbe = 'Organization Interest:[???] Profession: 2D artist';
+        let mn = 50;
+
+        function op() {
+            if (l < mbe.length) {
+                document.getElementById("pio").innerHTML += mbe.charAt(l);
+                l++;
+                setTimeout(op, mn);
+            }
+        }
+    </script>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="you();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="gui" class="w3-medium w3-relativity"><%='P' %><span style="border-bottom: solid; border-bottom-color: darkred;"><%='aul Chise' %></span><%='la' %><br></p>
+      </div>
+    </div>
+    <script>
+        let m = 0;
+        let ela = 'Organization Interest:[???] Profession: 2D artist';
+        let tou = 50;
+
+        function you() {
+            if (m < ela.length) {
+                document.getElementById("gui").innerHTML += ela.charAt(m);
+                m++;
+                setTimeout(you, tou);
+            }
+        }
+    </script>
+    <div  class="w3-quarter">
+      <div class="w3-card w3-margin">
+        <button onclick="osc();" class="w3-button w3-transparent"><%= image_tag 'avatar1.png', :class =>'w3-circle w3-center', :width => '50%'%></button>
+        <p id="car" class="w3-medium w3-relativity"><%='Os' %><span style="border-bottom: solid; border-bottom-color: orange;"><%='car Mutal' %></span><%='e' %><br></p>
+      </div>
+    </div>
+    <script>
+        let n = 0;
+        let ert = 'Organization Interest:[???] Profession: 3D artist';
+         let swp = 50;
+
+        function osc() {
+            if (n < ert.length) {
+                document.getElementById("car").innerHTML += ert.charAt(n);
+                n++;
+                setTimeout(osc, swp);
+            }
+        }
+    </script>
+  </div>
+
+
+  <hr>
+
+  <!-- Undergraduate/Intern Students) -->
+  <div class="w3-container w3-center">
+    <h2 class=" w3-margin-left w3-xlarge w3-relativity w3-arima"><%='Und'%><span style="border-bottom: solid; border-bottom-color: greenyellow"><%='ergraduate students and inte'%></span><%='rns'%></h2><br><article><span class="w3-medium w3-relativity" style="font-size:14px;"><%='At Syntuition, undergraduate/Intern students are described as individuals with no art/programming background at all but are interested to learn what goes around in the realm of art and computer technology. These can be medical students who want to learn the 3D technology for medical presentations or any other field.'%></span></article>
+  </div>
+
+  <script>
+      function w3_open() {
+          document.getElementById("good").style.width = "100%";
+          document.getElementById("good").style.display = "block";
+      }
+
+      function w3_close() {
+          document.getElementById("good").style.display = "none";
+      }
+  </script>
+</div>
+        </body>
+          </html>
+

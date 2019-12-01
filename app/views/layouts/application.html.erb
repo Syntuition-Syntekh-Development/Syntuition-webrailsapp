@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <title><%='Syntuition.org ~ Free and open source 3D virtual laboratory project ~  Base where intuition is synthesized!'%></title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Actor|Alef|Arima+Madurai|Charm|Cookie|Cormor
+  ant+Upright|Farsan|Italianno|Maitree|Marmelad|Montez|Niconne|Petit+Formal+Script|
+  Philosopher|Playball|Rochester|Rosarivo|Rouge+Script
+  |Tangerine&display=swap" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      .w3-fist::first-letter{font-size:26px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Oxygen,Ubuntu,Cantarell,Open Sans,Arial,sans-serif,
+      Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji,sans-serif;}
+      .w3-relativity{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Oxygen,Ubuntu,Cantarell,Open Sans,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji,sans-serif;}
+      .w3-anole{-webkit-animation-name: example; /* Chrome, Safari, Opera */   -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */    animation-name: example;    animation-duration: 90s;    animation-iteration-count: infinite; }/* Standard syntax */
+      @keyframes example {
+        0%   {background-color: red;}
+        5%   {background-color: darkred;}
+        10% {background-color: firebrick;}
+        15%   {background-color: orange;}
+        20%  {background-color: tomato;}
+        25%   {background-color: coral;}
+        30%  {background-color: yellow;}
+        35%   {background-color: yellowgreen;}
+        40% {background-color: greenyellow;}
+        45%   {background-color: green;}
+        50% {background-color: forestgreen;}
+        55%   {background-color: lawngreen;}
+        60% {background-color: blue;}
+        65%   {background-color: dodgerblue;}
+        70% {background-color: royalblue;}
+        75%   {background-color: indigo;}
+        80% {background-color: indianred;}
+        85%   {background-color: palevioletred;}
+        90% {background-color: violet;}
+        95%   {background-color: blueviolet;}
+        100% {background-color: darkviolet;}
+      }
+
+      .w3-cardi {background-color: transparent; width: 300px; height: 300px; perspective: 1000px;}.w3-cardi-inner { position:relative;
+                                                                                                    width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);} .w3-hover-cardi:hover{transform: rotateY(180deg);} .w3-cardi-front, .w3-cardi-back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden;} .w3-cardi-front {background-color: #bbb;color: black; z-index: 2;}.w3-cardi-back { background-color: #2980b9; color: red; transform: rotateY(180deg); z-index: 1;}
+      .w3-glowing{font-size: 80px;  color: #fff;text-align: center; -webkit-animation: glow 1s ease-in-out infinite alternate; -moz-animation: glow 1s ease-in-out infinite alternate; animation: glow 1s ease-in-out infinite alternate;}@-webkit-keyframes glow { from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;} to { text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}}
+      .w3-redra{font-family: Arial,Helvetica,sans-serif;}
+      .w3-smooth{scroll-behavior: smooth;}
+      .w3-redo{font-family: Georgia, serif; font-weight: normal;}
+      .w3-ready{font-family: 'Museo Sans', Arial, sans-serif;}
+      .w3-popo::first-line{color:crimson;}
+
+      .w3-reduct{font-family: 'MuseoSans-500', sans-serif; font-weight: normal; font-size: 12px;}
+      .w3-animations::after{ content: url(cool2.ico);}
+      .w3-synlab::after{content:url(synlab.ico);}
+      .w3-cookie{font-family: 'Cookie', cursive;}
+      .w3-Tangerine{font-family: 'Tangerine', cursive;}
+      .w3-philosopher{font-family: 'Philosopher', sans-serif;}
+      .w3-playball{font-family: 'Playball', cursive,Helvetica ;}
+      .w3-actor{font-family: 'Actor', sans-serif;}
+      .w3-italianno{font-family: 'Italianno', cursive;}
+      .w3-niconne{font-family: 'Niconne', cursive;}
+      .w3-alef{font-family: 'Alef', sans-serif;}
+      .w3-rochester{font-family: 'Rochester', cursive;}
+      .w3-arima{font-family: 'Arima Madurai', cursive;}
+      .w3-marmelad{font-family: 'Marmelad', sans-serif;}
+      .w3-petit{font-family: 'Petit Formal Script', cursive;}
+      .w3-maitree{font-family: 'Maitree', serif;}
+      .w3-montez{font-family: 'Montez', cursive;}
+      .w3-rouge{font-family: 'Rouge Script', cursive;}
+      .w3-charm{font-family: 'Charm', cursive;}
+      .w3-cormorant{font-family: 'Cormorant Upright', serif;}
+      .w3-rosarivo{font-family: 'Rosarivo', serif;}
+      .w3-farsan{font-family: 'Farsan', cursive;}
+      .w3-flex-container {display: flex; flex-flow: wrap; justify-content: center; align-items: center; height: auto; background-color:; margin-left:0px;}
+      .w3-flex-containe { background-color: #f1f1f1; width: 230px; height:300px; margin: 25px; text-align: center; line-height: 75px; font-size: 30px;}
+      .w3-software{background-image: image-url('assets/images/software.png');background-repeat: no-repeat; background-size:auto; background-position: top; background-attachment:fixed; padding-bottom:200px; render 'software/technolgy'}
+      .w3-chlorine{asset-url(chlorine.png);background-repeat: no-repeat; background-size:auto; background-position: top; background-attachment:fixed; padding-bottom:200px; render 'software/technolgy'}
+      .w3-gradient{text-transform: uppercase;background: linear-gradient(to right, #30CFD0 6%, #FF8C00 40%,#191970 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent;font-size: 2vw;}
+      .w3-radial{height: 150px;width: auto;  background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(grey 5%, lightgray 15%, white 60%); /* Standard syntax (must be last) */}
+      .w3-border-bottom-deep-purple,.w3-hover-border-bottom-deep-purple:hover{border-bottom-color: #730E15!important}
+    </style>
+     </head>
+
+  <body >
+      <div class="w3-sidebar w3-bar-block w3-center" style="display:none;" id="good">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large "><%= 'Close' %> &times;</button>
+    <p class="w3-bar-item w3-mobile" style="margin-top: 8px;"><%= link_to (image_tag 'logo4.ico'),{:controller => 'intuition', :action =>'synthetic'}, :id=>'2', :page=>'1' %> </p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'About',{:controller => 'foundation', :action =>'about'}, :class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'Project',{:controller => 'confidential', :action =>'project', :id=>'4', :page=>'2'} , :class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'Event' ,{:controller => 'memories', :action =>'events'} ,:class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'News',{:controller => 'updates', :action =>'news'} ,:class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'Workplace', {:controller => 'organization', :action =>'workplace'},:class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'Technology',{:controller => 'software', :action =>'technology'},:class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'Team',{:controller => 'community', :action =>'team'} ,:class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+    <p class="w3-bar-item w3-button w3-mobile w3-border w3-round-xxlarge"><%= link_to 'Donate', {:controller => 'donate', :action =>'devfund'},:class =>'w3-text-black w3-large', :style =>'text-decoration:none' %></p>
+  </div>
+  <div class="w3-bar w3-block w3-center w3-software">
+    <div class="w3-center w3-hover-shadow w3-hover-white  ">
+      <ul class="w3-transparent w3-hover-white w3-center w3-bar" style="margin-bottom: -1px; margin-top: 2px;padding-bottom:20px; margin-right:25px;" >
+        <li class="w3-margin-right w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"><%= link_to 'About',{:controller => 'foundation', :action =>'about',:page=>'1',:id=>'3'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-margin-right w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"><%= link_to 'Projects',{:controller => 'confidential', :action =>'project',:page=>'2',:id=>'4',:description=>'home for projects'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-margin-right w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"><%= link_to 'Workplace',{:controller => 'organization', :action =>'workplace',:page=>'3',:id=>'6'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-margin-right w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"><%= link_to 'News',{:controller => 'updates', :action =>'news',:page=>'4',:id=>'7'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-bar-item w3-mobile " style="margin-top: 8px;"><%= link_to (image_tag 'logo4.ico'), {:controller => 'intuition', :action =>'synthetic'} %> </li>
+        <li class="w3-margin-left w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"><%= link_to 'Technology',{:controller => 'software', :action =>'technology',:page=>'5',:id=>'10'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-margin-left w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"> <%= link_to 'Event',{:controller => 'memories', :action =>'events',:page=>'6',:id=>'3'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-margin-left w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"> <%= link_to 'Team',{:controller => 'community', :action =>'team',:page=>'7',:id=>'34'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-margin-left w3-bar-item w3-hover-cyan w3-button w3-mobile w3-border w3-round-xxlarge w3-hide-small" style="margin-top: 8px;"><%= link_to  'Donate', {:controller => 'donate', :action =>'devfund'},:class =>'w3-text-black w3-medium w3-relativity w3-hover-text-white', :style =>'text-decoration:none' %></li>
+        <li class="w3-button w3-center  w3-teal w3-border w3-border-pale-blue w3-round-large w3-hide-large w3-hide-medium w3-xlarge" onclick="w3_open();">☰</li>
+              </ul>
+
+    </div>
+  </div>
+    <%= yield %>
+    <div class="w3-row">
+  <div class="w3-container w3-grey w3-padding ">
+    <div class="w3-col m2">
+       <ul class="w3-text-white w3-relativity" style="list-style-type: none; font-size:13px;line-height: 21px;">
+        <li class="w3-large w3-margin-bottom w3-arima"><span style="border-bottom: solid; border-bottom-color:palegreen;"><%= 'SkyL' %></span><%='ab' %></li>
+        <li><%=link_to 'Download', 'workplace',:class => 'w3-relativity w3-text-white w3-hover-text-amber ', :style =>'text-decoration:none; '  %></li>
+        <li><%= link_to 'License', 'workplace',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li> <%=link_to 'Developers', 'workplace',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'Features', 'workplace',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'Documentation', 'workplace',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+      </ul>
+      
+    </div>
+    <div class="w3-col m2">
+     <ul class="w3-text-white w3-relativity" style="list-style-type: none; font-size:13px;line-height: 21px;">
+        <li class="w3-large w3-margin-bottom w3-arima"><%='Sy' %><span style="border-bottom: solid; border-bottom-color:gold;"><%= 'ntuiti' %></span><%='on' %></li>
+        <li><%=link_to 'About', {:controller => 'foundation', :action =>'about'},:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none'  %></li>
+        <li><%= link_to 'Goal', {:controller => 'foundation', :action => 'goal'},:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li> <%=link_to 'Mission', {:controller => 'foundation', :action => 'mission'},:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'History', 'abtsynt',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'Vision', {:controller => 'software', :action =>'technology',:id=>'23',:page=>'2'},:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+      </ul>
+    </div>
+    <div class="w3-col m2">
+      <ul class="w3-text-white w3-relativity" style="list-style-type: none; font-size:13px;line-height: 21px;">
+        <li class="w3-large w3-margin-bottom w3-arima"><%='A' %><span style="border-bottom: solid; border-bottom-color:indigo;"><%= 'ctivit' %></span><%='ies' %></li>
+        <li><%=link_to 'Show reel', {:controller => 'software', :action => 'technology'},:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none'  %></li>
+        <li><%= link_to 'Awards', 'technology',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li> <%=link_to 'Showcase Day', 'technology',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'School Tours', 'technology',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'Syntuition Birthday', 'technology',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+      </ul>
+    </div>
+    <div class="w3-col m2">
+      <ul class="w3-text-white w3-relativity" style="list-style-type: none; font-size:13px;line-height: 21px;">
+        <li class="w3-large w3-margin-bottom w3-arima"><%='As'%><span style="border-bottom: solid; border-bottom-color:darkcyan;"><%= 'sociat' %></span><%='es' %></li>
+        <li><%=link_to 'Gbpax', 'http://www.gbpax.cf',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none'  %></li>
+        <li><%= link_to 'Cyan Animations', '#',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li> <%=link_to 'Hillside Tech', '#',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'MischoolZambia', 'http://mischoolzambia.com ',:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'KMP', '#' ,:class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none'%></li>
+      </ul>
+    </div>
+    <div class="w3-col m2">
+      <ul class="w3-text-white w3-relativity" style="list-style-type: none; font-size:13px;line-height: 21px;">
+        <li class="w3-large w3-margin-bottom w3-arima"><%='Sy' %><span style="border-bottom: solid; border-bottom-color:green;"><%= 'ntra' %></span></li>
+        <li><%=link_to 'Team', {:controller => 'community', :action => 'team'}, :class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none'  %></li>
+        <li><%= link_to 'Internship', 'team', :class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li> <%=link_to 'Jobs', 'team', :class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'Policy', 'abtsynt', :class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+        <li><%=link_to 'Location', {:controller => 'foundation', :action => 'about'}, :class => 'w3-relativity w3-text-white w3-hover-text-amber', :style =>'text-decoration:none' %></li>
+      </ul>
+    </div>
+    <div class="w3-col m2">
+      <ul class="w3-text-white w3-relativity" style="list-style-type: none; font-size:13px">
+        <li class="w3-large w3-arima"><%='Fo' %><span style="border-bottom: solid; border-bottom-color:palevioletred;;"><%= 'llow Syntu' %></span><%='ition' %></li>
+
+      </ul>
+    </div>
+    <div class="w3-container">
+      <p class="w3-left w3-relativity"><%='© 2019 Syntuition All Rights Reserved' %></p>
+      <p class="w3-right w3-redra w3-text-white"><%= 'Designed by' %><span class="w3-text-white"><i><%= 'Syntuitionists'%></i></span></p>
+    </div>
+  </div>
+  </div>
+    <script>
+      function w3_open() {
+          document.getElementById("good").style.width = "100%";
+          document.getElementById("good").style.display = "block";
+      }
+
+      function w3_close() {
+          document.getElementById("good").style.display = "none";
+      }
+  </script>
+  </body>
+</html>

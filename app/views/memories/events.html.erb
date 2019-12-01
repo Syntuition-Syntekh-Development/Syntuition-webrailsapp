@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+         <title><%='Syntuition.org │ Home where intuition is synthesized!'%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Alef|Arima+Madurai|Charm|Cookie|Cormor
+  ant+Upright|Farsan|Italianno|Maitree|Marmelad|Montez|Niconne|Petit+Formal+Script|
+  Philosopher|Playball|Rochester|Rosarivo|Rouge+Script
+  |Tangerine&display=swap" rel="stylesheet">   
+        </head>
+        <body>
+            <h3 class="w3-border-bottom w3-bottom-red w3-arima w3-black w3-gradient w3-margin-left w3-center"><%='EACH EVENT WE HOST REMINDS US HOW IMPORTANT MOMENTS ARE IN OUR LIVES '%></h3>
+            <div class="w3-row">
+                <div class=w3-container>
+                    <div class="w3-col m4">
+                        <div class="w3-border w3-border-cyan w3-margin-top w3-round w3-padding w3-mobile " style="width:490px;">
+                        <h2 class="w3-arima w3-border-bottom w3-bottom-red"><%='Calender'%></h2>
+                      <ul class= "w3-bar w3-ul " style="display: inline;">
+                        <li class="w3-bar-item w3-cyan w3-text-white "><%='Sun'%><br>
+                          <%=if @current == @later
+                               p 1
+                             else
+                               p ' '
+                             end%><br>
+                          <%=if @current == @later
+                               p 8
+                             else
+                               p 3
+                             end%><br>
+                          <%=if @current == @later
+                               p 15
+                             else
+                               p 10
+                             end%><br>
+                          <%=if @current == @later
+                               p 22
+                             else
+                               p 17
+                             end%><br>
+                          <%=if @current == @later
+                               p 29
+                             else
+                               p 24
+                             end%></li>
+                      <li class="w3-bar-item "><%='Mon'%><br><%=if @current == @later
+                      p 2
+                      else
+                      p " "
+                      end%>
+                        <br>
+                        <%=if @current == @later
+                             p 9
+                           else
+                             p 4
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 16
+                           else
+                             p 11
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 23
+                           else
+                             p 18
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 30
+                           else
+                             p 25
+                           end%></li>
+                      <li class="w3-bar-item"><%='Tue'%><br>
+                        <%=if @current == @later
+                             p 3
+                           else
+                             p ' '
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 10
+                           else
+                             p 5
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 17
+                           else
+                             p 12
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                        p 24
+                        else
+                        p 19
+                       end%>
+                        <br>
+                        <%=if @current == @later
+                             p 31
+                           else
+                        p 26
+                           end%></li>
+                        <li class="w3-bar-item "><%='Wed'%><br>
+                          <%=if @current == @later
+                               p 4
+                             else
+                               p ' '
+                             end%>
+                          <br>
+                          <%=if @current == @later
+                               p 11
+                             else
+                               p 6
+                             end%>
+                          <br>
+                          <%=if @current == @later
+                               p 18
+                             else
+                               p 13
+                             end%>
+                          <br>
+                          <%=if @current == @later
+                               p 25
+                             else
+                               p 20
+                             end%>
+                          <br>
+                          <%=if @current == @later
+                               p ' '
+                             else
+                               p 27
+                             end%></li>
+                      <li class="w3-bar-item"><%='Thurs'%><br>
+                        <%=if @current == @later
+                             p 5
+                           else
+                             p ' '
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 12
+                           else
+                             p 7
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 19
+                           else
+                             p 14
+                           end%>
+                        <br><%=if @current == @later
+                                 p 26
+                               else
+                                 p 21
+                               end%>
+                        <br>
+                     <%=if @current == @later
+                      p ' '
+                      else
+                      p 28
+                      end%></li>
+                      <li class=" w3-bar-item"><%='Fri'%><br>
+                        <%=if @current == @later
+                             p 6
+                           else
+                             p 1
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 13
+                           else
+                             p 8
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 20
+                           else
+                             p 15
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 27
+                           else
+                             p 22
+                           end%><br>
+                      <%=if @current == @later
+                           p ' '
+                         else
+                           p 29
+                         end %>
+                      </li>
+                      <li class=" w3-bar-item "><%='Sat'%><br>
+                        <%=if @current == @later
+                             p 7
+                           else
+                             p 2
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 14
+                           else
+                             p 9
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 21
+                           else
+                             p 16
+                           end%>
+                        <br>
+                        <%=if @current == @later
+                             p 28
+                           else
+                             p 23
+                           end%>
+                      <br>
+                        <%=if @current == @later
+                             p ' '
+                           else
+                             p 30
+                           end  %>
+                      </li> </ul>
+                      <h3 class="w3-arima w3-center"><%='November'%></h3>
+                                                                    </div>
+                    </div>
+
+                  <div class="w3-col m4 w3-center w3-mobile">
+                        <div class="w3-margin-top w3-center w3-padding" style="width:370px; margin-left:65px">
+                          <canvas id="canvas" width="auto" height="280px"
+                                  style="background-color:transparent">
+                          </canvas>
+
+                          <script>
+                              let canvas = document.getElementById("canvas");
+                              let ctx = canvas.getContext("2d");
+                              let radius = canvas.height / 2;
+                              ctx.translate(radius, radius);
+                              radius = radius * 0.90;
+                              setInterval(drawClock, 1000);
+
+                              function drawClock() {
+                                  drawFace(ctx, radius);
+                                  drawNumbers(ctx, radius);
+                                  drawTime(ctx, radius);
+                              }
+
+                              function drawFace(ctx, radius) {
+                                  let grad;
+                                  ctx.beginPath();
+                                  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+                                  ctx.fillStyle = 'black';
+                                  ctx.fill();
+                                  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+                                  grad.addColorStop(0, 'white');
+                                  grad.addColorStop(0.5, '#333');
+                                  grad.addColorStop(1, 'white');
+                                  ctx.strokeStyle = grad;
+                                  ctx.lineWidth = radius*0.1;
+                                  ctx.stroke();
+                                  ctx.beginPath();
+                                  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+                                  ctx.fillStyle = 'white';
+                                  ctx.fill();
+                              }
+
+                              function drawNumbers(ctx, radius) {
+                                  let ang;
+                                  let num;
+                                  ctx.font = radius*0.15 + "px arial";
+                                  ctx.textBaseline="middle";
+                                  ctx.textAlign="center";
+                                  for(num = 1; num < 13; num++){
+                                      ang = num * Math.PI / 6;
+                                      ctx.rotate(ang);
+                                      ctx.translate(0, -radius*0.85);
+                                      ctx.rotate(-ang);
+                                      ctx.fillText(num.toString(), 0, 0);
+                                      ctx.rotate(ang);
+                                      ctx.translate(0, radius*0.85);
+                                      ctx.rotate(-ang);
+                                  }
+                              }
+
+                              function drawTime(ctx, radius){
+                                  let now = new Date();
+                                  let hour = now.getHours();
+                                  let minute = now.getMinutes();
+                                  let second = now.getSeconds();
+                                  //hour
+                                  hour=hour%12;
+                                  hour=(hour*Math.PI/6)+
+                                      (minute*Math.PI/(6*60))+
+                                      (second*Math.PI/(360*60));
+                                  drawHand(ctx, hour, radius*0.5, radius*0.07);
+                                  //minute
+                                  minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+                                  drawHand(ctx, minute, radius*0.8, radius*0.07);
+                                  // second
+                                  second=(second*Math.PI/30);
+                                  drawHand(ctx, second, radius*0.9, radius*0.02);
+                              }
+
+                              function drawHand(ctx, pos, length, width) {
+                                  ctx.beginPath();
+                                  ctx.lineWidth = width;
+                                  ctx.lineCap = "round";
+                                  ctx.moveTo(0,0);
+                                  ctx.rotate(pos);
+                                  ctx.lineTo(0, -length);
+                                  ctx.stroke();
+                                  ctx.rotate(-pos);
+                              }
+                          </script>
+
+
+                        </div>
+                    </div>
+
+                    <div class="w3-col m4">
+                        <div class="w3-card w3-margin-top">
+                       <h2 class="w3-center w3-border-bottom w3-bottom-red w3-arima"> <%=if true == @a
+                       p 'Monday'
+                       elsif true == @b
+                           p 'Tuesday'
+                           elsif true == @c
+                               p 'Wednesday'
+                                elsif true == @d
+                               p 'Thursday'
+                                elsif true == @e
+                               p 'Friday'
+                                elsif true == @f
+                               p 'Saturday'
+                                elsif true == @g
+                               p 'Sunday'
+                           end%></h2>
+                       <div class="w3-center w3-arima w3-text-brown" style="font-size: 150px;"><%=@love.day%></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-container">
+                   <h2 class="w3-center w3-arima"><%='EVENTS'%></h2>
+                   <div class="w3-card">
+                   <h2 class="w3-arima w3-border-bottom w3-bottom-red w3-padding"> <%='EVENTS DETAILS' %></h2>
+                   <h3 class="w3-padding"><%='Showcase'%></h3>
+                   </div>
+                </div>
+            </div>
+            </body>
+        
+    </html>
+
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%='Syntuition.org │ Home where intuition is synthesized!'%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Alef|Arima+Madurai|Charm|Cookie|Cormor
+  ant+Upright|Farsan|Italianno|Maitree|Marmelad|Montez|Niconne|Petit+Formal+Script|
+  Philosopher|Playball|Rochester|Rosarivo|Rouge+Script
+  |Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="w3-bar w3-card w3-right">
+  <strong class="w3-bar-item w3-left w3-arima w3-mobile"><%='SYNTUITION WEBSITE DEVELOPMENT' %></strong>
+  <ul class="w3-ul w3-right ">
+    <li class="w3-bar-item w3-arima" style="border-bottom: solid 2px;border-bottom-color: #730E15;"><%='FORM' %></li>
+    <li class="w3-bar-item w3-arima w3-hover-text-cyan"><%='COMMITS' %></li>
+    <li class="w3-bar-item w3-arima"><%='ABOUT' %></li>
+    <li class="w3-bar-item w3-arima"><%='NOTABLE DEVELOPERS' %></li>
+  </ul>
+</div>
+    <div class="w3-row">
+        <div class='w3-center'>
+    <%='FACTS ABOUT SYNTUITION WEBSITE'%><br>
+    <%='WE USE KOMODO AND RUBYMINE IDE'%><br>
+    <%='OUR WEBAPP IS HOSTED BY HEROKU.COM'%><br>
+    <%='OUR WEBSITE IS CREATED USING RUBY ON RAILS'%><br>
+    <%='A VISITOR HAS TO KNOW RUBY PROGRAMMING LANGUAGE'%><br>
+    <%='A VISITOR HAS TO KNOW GIT AND GITHUB'%>
+    </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-card w3-center w3-xxlarge w3-arima"><%='Syntuition Website Development Form'%>
+        <%=form_tag  do%>
+        <div class="w3-half w3-mobile">
+        <span class="w3-medium"><%='Surname: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%><br>
+
+          <span class="w3-medium"><%='Given Names: '%></span>
+          <%= text_field :name, :subject, :class=>'w3-medium w3-round w3-border w3-border-blue', :size=>'45'%><br>
+        
+        <span class="w3-medium"><%='Email Address: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%><br>
+
+
+
+        <span class="w3-medium"><%='Phone Number: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%><br>
+        
+        <span class="w3-medium"><%='Programming Lang known: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%><br>
+        
+        <span class="w3-medium"><%='Favorite Text Editor: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'25';%><br>
+        
+        <span class="w3-medium"><%='Favorite IDE: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'25';%><br>
+        
+        <span class="w3-medium"><%='Mastery Level: '%></span>
+          <%= radio_button_tag(:mastery, "pro") %>
+          <%= label_tag(:mastery_pro, "professional", :class=>'w3-arima w3-medium') %>
+          <%= radio_button_tag(:mastery, "inter") %>
+          <%= label_tag(:mastery_inter, "intermediate", :class=>'w3-arima w3-medium') %>
+          <%= radio_button_tag(:mastery, "beg") %>
+          <%= label_tag(:mastery_beg, "beginner", :class=>'w3-arima w3-medium') %>
+        </div>
+        <div class="w3-half w3-mobile">
+          <span class="w3-medium"><%='Sex: '%></span>
+          <%= radio_button_tag(:age, "child") %>
+          <%= label_tag(:age_child, "female", :class=>'w3-arima w3-medium') %>
+          <%= radio_button_tag(:age, "adult") %>
+          <%= label_tag(:age_adult, "male", :class=>'w3-arima w3-medium') %><br>
+        <span class="w3-medium"><%='Age: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'10';%><br>
+        
+        <span class="w3-medium"><%='Occupation: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%><br>
+        
+        <span class="w3-medium"><%='Country: '%></span>
+          <%= select_tag(:city_id, options_for_select([['Ghana', 1],['Sierra Leone', 33],['Guinea', 34],['Mauritius', 35],
+          ['Algeria', 2],['Angola', 3],['Niger', 4],['Botswana',10],['Sudan', 5],['Ethiopia', 6],['South Africa', 7],
+          ["Benin",8], ["Senegal",9], ["Liberia",10], ["Togo",12], ["Rwanda",13],["Morocco",14],['Zimbabwe', 15],
+          ['Gabon', 16],['Malawi', 17],['Kenya', 18],['Uganda', 19],['Burundi', 20],['Chad', 21],['Zambia', 22],['Comoros', 23],
+          ['Tanzania', 24],['Burundi', 25],['Mali', 26],['Libya', 27],['Egypt', 28],['Swaziland', 29],['Namibia', 30],['Lesotho', 31],
+          ['Somalia', 32],['Djibouti', 36],['Nigeria', 37],['Burkina Faso', 38],['Tunisia', 39],['Cape Verde', 40],['Eritrea', 41],
+          ['Seychelles', 42],['Guinea-Bissau', 43],['Madagascar', 44],['Mozambique', 45],['Cameroon', 46],['Equatorial Guinea', 47],
+          ['Republic of Congo', 48],['Central African Republic', 49],['Democratic Republic of Congo', 50],['Gambia', 51],['Cote dLvoire', 52]
+                                                                   ].sort,9), :class=>'w3-medium') %><br>
+
+          <span class="w3-medium"><%='City: '%></span>
+        <%= text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'25';%><br>
+        
+        <span class="w3-medium"><%='Github username: '%></span>
+        <%=text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%><br>
+        
+        <span class="w3-medium"><%='Rationale For Website Development: '%></span><br>
+          <%=text_area :name, :main_body, :rows=>5, :cols=>40, :class=>'w3-round w3-mobile w3-medium' %><br>
+        
+        
+        </div>
+        <span class="w3-medium w3-center"><%='Target Area: '%>
+        <%=text_field :name, :subject,:class=>'w3-medium w3-round w3-border w3-border-blue',:size=>'45';%></span><br>
+        <div class="w3-button w3-round-xlarge"><%=submit_tag %></div>
+
+        <%end%>
+        </div>
+        
+    </div>
+</body>
+</html>
